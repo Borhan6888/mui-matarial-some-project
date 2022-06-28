@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
+import Checkout from './checkout/Checkout';
+import Album from './album/Album';
+import Pricing from './pricing/Pricing';
+import Blog from './blog/Blog';
+// import PaymentForm from './checkout/PaymentForm';
+// import Review from './checkout/Review';
+// import AddressForm from './checkout/AddressForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SignIn />
+      <SignUp />
+      <Checkout />
+
+      {/* <AddressForm /> */}
+      {/* <PaymentForm /> */}
+      {/* <Review /> */}
+
+      <Pricing />
+      <Blog />
+      <Album />
     </div>
   );
 }
